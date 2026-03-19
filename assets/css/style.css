@@ -1161,6 +1161,13 @@ textarea {
   height: 1.18rem;
 }
 
+.social-link .soundcloud-icon-img {
+  width: 1.28rem;
+  height: 0.86rem;
+  display: block;
+  object-fit: contain;
+}
+
 .social-link:hover,
 .social-link:focus-visible {
   transform: translateY(-1px);
