@@ -9,7 +9,7 @@ window.GUSTAVO_TRANSLATIONS = {
       ariaPrimaryNav: 'Primary',
       ariaLanguageSwitcher: 'Language switcher',
       footerTagline: 'Acoustic swing from Bern.',
-      footerMail: 'Booking & contact: gustavoswingtet@gmail.com',
+      footerMail: 'Booking & contact: contact@gustavoswingtet.ch',
       footerCopyright: 'The Gustavo Swingtet. All rights reserved.',
       socialHeading: 'Follow'
     },
@@ -158,7 +158,7 @@ window.GUSTAVO_TRANSLATIONS = {
       ariaPrimaryNav: 'Hauptnavigation',
       ariaLanguageSwitcher: 'Sprachauswahl',
       footerTagline: 'Akustischer Swing aus Bern.',
-      footerMail: 'Booking & Kontakt: gustavoswingtet@gmail.com',
+      footerMail: 'Booking & Kontakt: contact@gustavoswingtet.ch',
       footerCopyright: 'The Gustavo Swingtet. Alle Rechte vorbehalten.',
       socialHeading: 'Folgen'
     },
@@ -307,7 +307,7 @@ window.GUSTAVO_TRANSLATIONS = {
       ariaPrimaryNav: 'Navigation principale',
       ariaLanguageSwitcher: 'Choix de la langue',
       footerTagline: 'Swing acoustique de Berne.',
-      footerMail: 'Booking & contact : gustavoswingtet@gmail.com',
+      footerMail: 'Booking & contact : contact@gustavoswingtet.ch',
       footerCopyright: 'The Gustavo Swingtet. Tous droits réservés.',
       socialHeading: 'Suivre'
     },
