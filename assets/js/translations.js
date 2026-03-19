@@ -318,7 +318,7 @@ window.GUSTAVO_TRANSLATIONS = {
       ctaContact: 'Booking',
       heroNote: 'Basé à Berne et actif dans la région et au-delà.',
       liveEyebrow: 'Impressions live',
-      liveCopy: 'Que ce soit sur des scènes de festivals, dans des bars, des restaurants ou au coin de la rue, un concert du Gustavo Swingtet est un plaidoyer amoureux pour la musique live acoustique. Le jeune ensemble, constitué de deux guitares, d'une contrebasse, d'une trompette et d'un violon, s'amuse à mélanger la virtuosité et la fougue du jazz manouche avec l'enjouement du swing et le charme de la musique folk. La joie ressentie par les  musiciens lors d'improvisations  repoussant leurs limites et qui sauront se montrer pleines de surprises n'a de risque que d'être contagieuse, transformant chaque morceau en une excitante aventure sensorielle.',
+      liveCopy: "Que ce soit sur des scènes de festivals, dans des bars, des restaurants ou au coin de la rue, un concert du Gustavo Swingtet est un plaidoyer amoureux pour la musique live acoustique. Le jeune ensemble, constitué de deux guitares, d'une contrebasse, d'une trompette et d'un violon, s'amuse à mélanger la virtuosité et la fougue du jazz manouche avec l'enjouement du swing et le charme de la musique folk. La joie ressentie par les  musiciens lors d'improvisations  repoussant leurs limites et qui sauront se montrer pleines de surprises n'a de risque que d'être contagieuse, transformant chaque morceau en une excitante aventure sensorielle.",
       quoteFooter: '',
       cardsEyebrow: 'Le groupe',
       cardsTitle: 'Acoustique, joueur et fait pour le live.',
