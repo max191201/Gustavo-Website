@@ -244,7 +244,7 @@ main {
 }
 
 .hero-page {
-  min-height: 34vh;
+  min-height: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -258,11 +258,11 @@ main {
 }
 
 .hero-page .hero-copy {
-  padding-block: 2.75rem;
+  padding-block: clamp(2.75rem, 5vw, 4rem) 0.75rem;
 }
 
 .hero-page + .section {
-  padding-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(1rem, 2.5vw, 2rem);
 }
 
 .hero-copy {
@@ -408,12 +408,9 @@ body[data-page="home"] {
 }
 
 .panel,
-.card,
 .listing,
 .embed-card,
-.form-card,
-.quote-card,
-.info-card {
+.quote-card {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0.008)),
     linear-gradient(180deg, rgba(31, 28, 26, 0.88), rgba(31, 28, 26, 0.8));
@@ -472,26 +469,13 @@ body[data-page="contact"] .hero-copy {
   color: var(--beige);
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  padding: 1.55rem;
-}
-
 .card-title {
   margin: 0 0 0.55rem;
   font-size: 1.25rem;
   color: var(--beige);
 }
 
-.card p,
 .listing p,
-.info-card p,
-.form-note,
 .meta-line {
   margin: 0;
   color: var(--text-soft);
@@ -1020,7 +1004,6 @@ body[data-page="contact"] .hero-copy {
 }
 
 .about-split,
-.contact-layout,
 .media-links,
 .lineup-grid {
   display: grid;
@@ -1045,67 +1028,29 @@ body[data-page="contact"] .hero-copy {
   color: var(--accent);
 }
 
-.contact-layout {
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+.booking-card {
+  max-width: 46rem;
 }
 
-.info-card,
-.form-card {
-  padding: 1.6rem;
-}
-
-.contact-list,
-.booking-list {
+.booking-details {
   display: grid;
-  gap: 0.85rem;
-  margin: 1.4rem 0 0;
+  justify-items: start;
+  gap: 0.25rem;
+  font-size: 1.125rem;
+  font-style: normal;
 }
 
-.contact-list .row,
-.booking-list li {
-  padding: 0.95rem 1rem;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.02);
+.booking-details a {
+  max-width: 100%;
+  padding-block: 0.15rem;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
-
-.contact-list strong,
-.booking-list strong {
-  display: block;
-  margin-bottom: 0.15rem;
+.booking-details a:hover,
+.booking-details a:focus-visible {
   color: var(--beige);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.82rem;
-}
-
-.detail-note {
-  display: block;
-  width: 100%;
-  margin-top: 0.38rem;
-  color: var(--text-soft);
-  font-size: 0.88rem;
-  line-height: 1.45;
-}
-
-.contact-list .row > span:not(.detail-note),
-.contact-list .row > a {
-  display: block;
-}
-
-.booking-list {
-  padding-left: 0;
-  list-style: none;
-}
-
-.form-grid {
-  display: grid;
-  gap: 0.95rem;
-}
-
-.form-grid.two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 label {
@@ -1117,8 +1062,7 @@ label {
   font-size: 0.82rem;
 }
 
-input,
-textarea {
+input {
   width: 100%;
   border: 1px solid rgba(229, 209, 177, 0.18);
   background: rgba(255, 255, 255, 0.03);
@@ -1127,30 +1071,10 @@ textarea {
   padding: 0.9rem 1rem;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
   outline: 2px solid rgba(255, 165, 0, 0.3);
   outline-offset: 2px;
   border-color: rgba(255, 165, 0, 0.5);
-}
-
-textarea {
-  min-height: 10rem;
-  resize: vertical;
-}
-
-.form-grid label {
-  font-size: 0.875rem;
-}
-
-.form-grid input,
-.form-grid textarea {
-  font-size: 1rem;
-  letter-spacing: 0.025em;
-}
-
-.form-note {
-  font-size: 1rem;
 }
 
 .social-row,
@@ -1273,9 +1197,7 @@ body[data-page="home"] .site-footer::before {
 @media (max-width: 980px) {
   .grid-2,
   .about-split,
-  .contact-layout,
   .embed-grid,
-  .card-grid,
   .lineup-grid {
     grid-template-columns: 1fr;
   }
@@ -1370,15 +1292,8 @@ body[data-page="home"] .site-footer::before {
     width: 100%;
   }
 
-  .form-grid.two {
-    grid-template-columns: 1fr;
-  }
-
   .text-panel,
-  .card,
   .quote-card,
-  .info-card,
-  .form-card,
   .listing,
   .embed-card-body {
     padding: 1.25rem;

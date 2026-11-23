@@ -15,7 +15,7 @@ The site currently consists of four main pages:
 - **Home** – introduction, featured video and track preview
 - **Media** – recordings, video and collage-style photo gallery
 - **About Us** – band background, sound description and line-up
-- **Contact** – booking information and contact form
+- **Contact** – direct booking contact
 
 The site is fully static and designed to be easy to host, maintain and extend.
 
@@ -66,14 +66,7 @@ The intention was to keep some of the loose editorial feel of the previous Wix v
 
 ### Contact and booking
 
-The contact page includes:
-
-- booking contact details
-- phone number
-- email address
-- a simple contact form
-
-The form allows visitors to optionally include event details such as location, date or type of event.
+The booking page gives visitors a named contact with direct email and phone links.
 
 ---
 
@@ -134,7 +127,7 @@ Implemented so far:
 - custom self-hosted audio player
 - YouTube embed
 - collage-style media gallery
-- booking/contact form
+- direct booking contact
 - updated visual system based on the band's existing look
 
 Still open for future updates:
