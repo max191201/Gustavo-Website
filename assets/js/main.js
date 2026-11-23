@@ -70,16 +70,23 @@
   const navToggle = document.querySelector('[data-nav-toggle]');
   const navRow = document.querySelector('[data-nav-row]');
   if (navToggle && navRow) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navRow.classList.toggle('is-open');
+    function setNavOpen(isOpen) {
+      navRow.classList.toggle('is-open', isOpen);
       navToggle.setAttribute('aria-expanded', String(isOpen));
+    }
+
+    navToggle.addEventListener('click', () => {
+      setNavOpen(!navRow.classList.contains('is-open'));
     });
 
     navRow.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        navRow.classList.remove('is-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', () => setNavOpen(false));
+    });
+
+    navToggle.parentElement.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape' || !navRow.classList.contains('is-open') || !navToggle.offsetWidth) return;
+      setNavOpen(false);
+      navToggle.focus();
     });
   }
 
