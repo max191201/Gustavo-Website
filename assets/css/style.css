@@ -410,7 +410,8 @@ body[data-page="home"] {
 .panel,
 .listing,
 .embed-card,
-.quote-card {
+.quote-card,
+.info-card {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.022), rgba(255, 255, 255, 0.008)),
     linear-gradient(180deg, rgba(31, 28, 26, 0.88), rgba(31, 28, 26, 0.8));
@@ -476,6 +477,7 @@ body[data-page="contact"] .hero-copy {
 }
 
 .listing p,
+.info-card p,
 .meta-line {
   margin: 0;
   color: var(--text-soft);
@@ -1004,6 +1006,7 @@ body[data-page="contact"] .hero-copy {
 }
 
 .about-split,
+.contact-layout,
 .media-links,
 .lineup-grid {
   display: grid;
@@ -1028,29 +1031,65 @@ body[data-page="contact"] .hero-copy {
   color: var(--accent);
 }
 
-.booking-card {
-  max-width: 46rem;
+.contact-layout {
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: start;
 }
 
-.booking-details {
+.info-card {
+  padding: 1.6rem;
+}
+
+.contact-list,
+.booking-list {
   display: grid;
-  justify-items: start;
-  gap: 0.25rem;
-  font-size: 1.125rem;
-  font-style: normal;
+  gap: 0.85rem;
+  margin: 1.4rem 0 0;
 }
 
-.booking-details a {
-  max-width: 100%;
-  padding-block: 0.15rem;
-  overflow-wrap: anywhere;
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+.contact-list .row,
+.booking-list li {
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
 }
 
-.booking-details a:hover,
-.booking-details a:focus-visible {
+
+.contact-list strong,
+.booking-list strong {
+  display: block;
+  margin-bottom: 0.15rem;
   color: var(--beige);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.detail-note {
+  display: block;
+  width: 100%;
+  margin-top: 0.38rem;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.contact-list .row > span:not(.detail-note),
+.contact-list .row > a {
+  display: block;
+}
+
+.booking-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.booking-materials-list {
+  display: grid;
+  gap: 0.35rem;
+  margin: 1rem 0 0;
+  padding-inline-start: 1.25rem;
 }
 
 label {
@@ -1197,6 +1236,7 @@ body[data-page="home"] .site-footer::before {
 @media (max-width: 980px) {
   .grid-2,
   .about-split,
+  .contact-layout,
   .embed-grid,
   .lineup-grid {
     grid-template-columns: 1fr;
@@ -1294,6 +1334,7 @@ body[data-page="home"] .site-footer::before {
 
   .text-panel,
   .quote-card,
+  .info-card,
   .listing,
   .embed-card-body {
     padding: 1.25rem;
